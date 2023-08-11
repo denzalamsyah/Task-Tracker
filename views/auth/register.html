@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{template "general/header"}}
+</head>
+<body>
+    <!-- beginanswer -->
+    <div class="flex items-center justify-center min-h-screen bg-cover" style="background-image: url('https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1031&q=80');">
+        <div class="w-full max-w-md px-10 py-10 mt-4 text-left bg-gray-900 bg-opacity-30 shadow-lg rounded-lg border-4 border-white">
+            <h3 class="text-2xl font-bold text-center text-white">Register account</h3>
+            <form method="POST" action="/client/register/process">
+                <div>
+                    <div class="mt-4">
+                        <div>
+                            <label class="block text-white" for="fullname">Fullname<label>
+                            <input type="text" placeholder="fullname" class="w-full px-4 py-2 mt-2 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600 border-2 border-white bg-gray-900 bg-opacity-50" name="fullname">
+                        </div>
+                        <div class="mt-4">
+                            <label class="block text-white" for="email">Email<label>
+                            <input type="email" placeholder="Email" class="w-full px-4 py-2 mt-2 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600 border-2 border-white bg-gray-900 bg-opacity-50" name="email">
+                        </div>
+                        <div class="mt-4">
+                            <label class="block text-white">Password<label>
+                            <input type="password" placeholder="Password" class="w-full px-4 py-2 mt-2 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600 border-2 border-white bg-gray-900 bg-opacity-50" name="password">
+                        </div>
+                        <div class="flex items-baseline justify-between">
+                            <button class="px-6 py-2 mt-4 text-white bg-gray-600 rounded-lg hover:bg-gray-900">Register</button>
+                            <a href="/client/login" class="text-sm text-white hover:underline font-semibold">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- endanswer -->
+</body>
+</html>
